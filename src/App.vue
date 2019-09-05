@@ -3,9 +3,11 @@
     <button v-if="show" @click="handleClick">generate</button>
     <button v-if="show" @click="handleHide">hide</button>
     <p v-if="show">
-      1. 先本地留备份！！！点击 hide
+      1. 点击 generate
       <br>
-      2. ctrl + p 打印选择保存到 pdf
+      2. 点击 hide，之前记得先把内容备份到本地
+      <br>
+      3. ctrl + p 打印选择保存到 pdf
     </p>
     <div v-if="show" id="container"></div>
     <div id="result" class="markdown-body">
@@ -45,15 +47,16 @@ export default {
 - 列表内容
 + 列表内容
 * 列表内容
-1.列表内容
-2.列表内容
-3.列表内容
+1. 列表内容
+2. 列表内容
+3. 列表内容
 
 姓名|技能|排行
 --|--|--
 刘备|哭|大哥
 关羽|打|二哥
 张飞|骂|三弟
+
 \`create database hero;\`
 
 \`\`\`
